@@ -1,3 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odd Job Crew</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#F8F6EC;
+color:#2d2d2d;
+}
+
+header{
+background:linear-gradient(135deg,#1B5E20,#4CAF50);
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+header p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#FFF8E7;
+color:#1B5E20;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+background:white;
+}
+
+nav{
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+margin:0 18px;
+text-decoration:none;
+font-weight:600;
+color:#1B5E20;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+h2{
+font-size:2rem;
+color:#1B5E20;
+margin-bottom:25px;
+}
+
+.about{
+font-size:1.15rem;
+line-height:1.8;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#2E7D32;
+margin-bottom:10px;
+}
+
+.highlight{
+background:#2E7D32;
+color:white;
 padding:45px;
 text-align:center;
 font-size:1.5rem;
@@ -16,41 +134,36 @@ margin:12px 0;
 font-size:1.1rem;
 }
 
-.contact a{
-color:#1B5E20;
-text-decoration:none;
-font-weight:600;
-}
-
-.contact a:hover{
-text-decoration:underline;
-}
-
 footer{
 background:#1B5E20;
 color:white;
-@@ -153,6 +149,7 @@
+text-align:center;
+padding:35px;
+margin-top:50px;
 }
 
 </style>
-
 </head>
 
 <body>
-@@ -167,22 +164,26 @@
+
+<header>
+
+<h1>🌿 Odd Job Crew</h1>
+
+<p><strong>"We do the jobs others don't want to do!"</strong></p>
+
+<a class="button" href="#contact">Get a Free Quote</a>
 
 </header>
-
 
 <nav>
 
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
 <a href="#contact">Contact</a>
 
 </nav>
-
 
 <section id="about">
 
@@ -61,92 +174,63 @@ color:white;
 We're a team of hardworking <strong>Year 9 students</strong> who enjoy helping people around our local community.
 From lawns and gardens to moving heavy items and babysitting, we're here to tackle the jobs you'd rather not do.
 
-From lawns and gardens to moving items and babysitting, we're here to tackle the jobs you'd rather not do.
-
 <br><br>
 
-@@ -192,6 +193,7 @@
+<strong>Hard Work &gt; Fair Prices &gt; We Get the Job Done.</strong>
+
+</p>
 
 </section>
-
 
 <section id="services">
 
 <h2>Our Services</h2>
-@@ -220,7 +222,7 @@
-
-<div class="card">
-<h3>🧹 Garden Clean-Ups</h3>
-<p>General outdoor cleanups.</p>
-<p>Complete garden tidy-ups.</p>
-</div>
-
-<div class="card">
-@@ -242,12 +244,75 @@
-
-</section>
-
-
-<section id="pricing">
-
-<h2>💰 Our Prices</h2>
-
-<p>
-Fair prices. Quality work. No job too big or too small.
-</p>
 
 <div class="services">
 
 <div class="card">
 <h3>🌱 Weeding</h3>
-<p>$25 per hour</p>
+<p>Fast and thorough garden weeding.</p>
 </div>
 
 <div class="card">
 <h3>🚜 Lawn Mowing</h3>
-<p>$25 per hour</p>
+<p>Clean, tidy lawns all year round.</p>
 </div>
 
 <div class="card">
 <h3>✂️ Hedge Trimming</h3>
-<p>$25 per hour</p>
+<p>Neat hedges and tidy gardens.</p>
 </div>
 
 <div class="card">
-<h3>🍃 Leaf Blowing</h3>
-<p>$20 per hour</p>
+<h3>🍂 Raking</h3>
+<p>Leaf removal and tidy-ups.</p>
 </div>
 
 <div class="card">
 <h3>🧹 Garden Clean-Ups</h3>
-<p>$30 per hour</p>
+<p>General outdoor cleanups.</p>
 </div>
 
 <div class="card">
 <h3>📦 Moving Stuff</h3>
-<p>$25 per hour</p>
+<p>Helping move boxes, furniture and more.</p>
 </div>
 
 <div class="card">
 <h3>👶 Babysitting</h3>
-<p>$30 per hour</p>
+<p>Friendly and responsible babysitting.</p>
 </div>
 
 <div class="card">
-<h3>⭐ Other Odd Jobs</h3>
-<p>Contact us for a quote</p>
+<h3>⭐ Odd Jobs</h3>
+<p>If you've got a job, ask us!</p>
 </div>
 
 </div>
-
-<br>
-
-<p><strong>Minimum booking: $20</strong></p>
-
-<p>Prices may vary depending on job size and difficulty.</p>
 
 </section>
-
 
 <div class="highlight">
 
@@ -154,22 +238,36 @@ Year 9 Kids • Hard Work > Fair Prices > We Get the Job Done
 
 </div>
 
-
 <section id="contact">
 
 <div class="contact">
-@@ -274,6 +339,7 @@
+
+<h2>Contact Us</h2>
+
+<p>Need help? We'd love to hear from you!</p>
+
+<p><strong>📧 Email:</strong><br>
+sebbo.squash@icloud.com</p>
+
+<p><strong>📞 Phone:</strong><br>
+022 384 5342</p>
+
+<p><strong>Odd Job Crew</strong><br>
+"We do the jobs others don't want to do!"</p>
+
+</div>
 
 </section>
-
 
 <footer>
 
 <h3>Odd Job Crew</h3>
-@@ -284,5 +350,6 @@
+
+<p>Hard Work • Fair Prices • We Get the Job Done</p>
+
+<p>© 2026 Odd Job Crew</p>
 
 </footer>
-
 
 </body>
 </html>
