@@ -120,6 +120,37 @@ color:#2E7D32;
 margin-bottom:10px;
 }
 
+details{
+margin-top:15px;
+border-top:1px solid #ddd;
+padding-top:12px;
+}
+
+summary{
+cursor:pointer;
+font-weight:600;
+color:#1B5E20;
+list-style:none;
+}
+
+summary::-webkit-details-marker{
+display:none;
+}
+
+summary::after{
+content:" ▼";
+font-size:.8rem;
+}
+
+details[open] summary::after{
+content:" ▲";
+}
+
+details p{
+margin-top:12px;
+line-height:1.6;
+color:#555;
+}
 .highlight{
 background:#2E7D32;
 color:white;
@@ -267,41 +298,73 @@ I take pride in every job I do and always give 100% effort. My goal is to provid
 <div class="card">
 <h3>🌱 Weeding</h3>
 <p>Fast and thorough garden weeding.</p>
+<details>
+<summary>Learn More</summary>
+<p>Keep your garden looking its best with our thorough weeding service. We remove weeds from garden beds, paths, and around plants by hand or with the right tools, helping your flowers and shrubs stay healthy while leaving your garden neat and tidy.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>🚜 Lawn Mowing</h3>
 <p>Clean, tidy lawns all year round.</p>
+<details>
+<summary>Learn More</summary>
+<p>We mow your lawn to a professional standard, including edging around paths, driveways, and garden beds. Whether it's a one-time cut or regular maintenance, we'll leave your lawn looking clean, fresh, and well cared for.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>✂️ Hedge Trimming</h3>
 <p>Neat hedges and tidy gardens.</p>
+<details>
+<summary>Learn More</summary>
+<p>We'll trim and shape your hedges to keep them healthy, tidy, and looking their best. We clean up all clippings afterwards, so your property is left spotless.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>🍃 Leaf Blowing</h3>
 <p>Fast leaf blowing and outdoor clean-ups.</p>
+<details>
+<summary>Learn More</summary>
+<p>We'll clear leaves, grass clippings, and other outdoor debris from driveways, patios, footpaths, decks, and gardens using a leaf blower, leaving your outdoor areas clean and safe.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>🧹 Garden Clean-Ups</h3>
 <p>Complete garden tidy-ups.</p>
+<details>
+<summary>Learn More</summary>
+<p>Need your garden refreshed? We'll remove weeds, trim plants, rake leaves, clear green waste, and tidy garden beds to restore your outdoor space and make it look its best.</p>
+</details>
 </div>
 
 <div class="card">
-<h3>📦 Moving Stuff</h3>
+<h3>📦 Moving Help</h3>
 <p>Helping move boxes, furniture and more.</p>
+<details>
+<summary>Learn More</summary>
+<p>Need an extra pair of hands? We can help move furniture, boxes, appliances, and other heavy items around your home or during a move. We'll handle your belongings carefully and work efficiently.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>👶 Babysitting</h3>
 <p>Friendly and responsible babysitting.</p>
+<details>
+<summary>Learn More</summary>
+<p>We provide friendly, responsible babysitting in a safe and caring environment. We can supervise children, play games, help with homework, prepare simple meals, and keep them entertained while you're away.</p>
+</details>
 </div>
 
 <div class="card">
 <h3>⭐ Odd Jobs</h3>
 <p>If you've got a job, ask us!</p>
+<details>
+<summary>Learn More</summary>
+<p>Have a job that's not listed? We're happy to help with a wide range of household and outdoor tasks. Just let us know what you need, and we'll do our best to get it done.</p>
+</details>
 </div>
 
 </div>
@@ -345,7 +408,7 @@ Fair prices. Quality work. No job too big or too small.
 </div>
 
 <div class="card">
-<h3>📦 Moving Stuff</h3>
+<h3>📦 Moving help</h3>
 <p>$25 per hour</p>
 </div>
 
